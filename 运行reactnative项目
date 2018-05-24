@@ -1,0 +1,22 @@
+1.修改项目配置
+修改为
+classpath 'com.android.tools.build:gradle:3.1.2'
+
+修改gradle-wrapper.properties
+distributionUrl=https\://services.gradle.org/distributions/gradle-4.4-all.zip
+
+修改为
+compileSdkVersion 27
+minSdkVersion 24
+targetSdkVersion 27
+
+删除
+compile 'com.android.support:appcompat-v7:23.0.1'
+
+修改
+compile为implementation(androidstudio新版本不支持）
+
+2.在main下新建文件夹assets。
+3.在终端中运行命令：
+React-native bundle --platform Android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+

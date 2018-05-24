@@ -1,0 +1,15 @@
+1.新建文件夹,创建SSH Key：
+mkdir git
+ssh-keygen -t rsa -C "xuweichao@ropartner.com"
+2.打开home文件夹下的 .ssh 文件
+cd .ssh
+3.打开id_rsa.pub文件
+cat id_rsa.pub
+4.拷贝id_rsa.pub中的所有内容
+5.打开192.168.0.10用户的setting中的SSH Keys
+6.粘贴进去Key框中，点击添加钥匙(Add key)
+7.设置本地git用户名和邮箱参数
+git config --global user.name xuweichao
+git config --global user.email xuweichao@ropartner.com
+8.链接完成。
+

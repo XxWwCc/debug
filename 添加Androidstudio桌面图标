@@ -1,0 +1,18 @@
+1.创建图标文件：
+cd /usr/share/applications
+sudo touch Studio.desktop
+2添加权限，打开图标文件：
+sudo chmod 777 Studio.desktop
+gedit Studio.desktop 
+3.在文件中添加以下代码：
+[Desktop Entry]
+Type=Application
+Name=Android Studio
+Exec="/home/xwc/Desktop/android-studio/bin/studio.sh" %f
+Icon=/home/xwc/Desktop/android-studio/bin/studio.png
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=true
+StartupWMClass=jetbrains-android-studio
+Name[en_GB]=android-studio.desktop
+4.搜索打开Androidstudio，右键图标：锁定到启动器

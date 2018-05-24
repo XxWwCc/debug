@@ -1,0 +1,8 @@
+1.删除libstdc++文件夹下的文件
+Android/Sdk/emulator/lib64/libstdc++/
+2.链接
+ln -s /usr/lib64/libstdc++.so.6 Android/Sdk/emulstor/lib64/libstdc++
+ln -s /usr/lib64/libstdc++.so.6.0.21 Android/Sdk/emulstor/lib64/libstdc++
+3.重启androidstduio
+4.创建模拟器，修改模拟器的设置
+Graphics中的Automatic改为software
