@@ -18,5 +18,5 @@ compile为implementation(androidstudio新版本不支持）
 
 2.在main下新建文件夹assets。
 3.在终端中运行命令：
-React-native bundle --platform Android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
 

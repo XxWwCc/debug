@@ -1,0 +1,13 @@
+1.原因
+8081端口被占用
+2.测试原因
+在项目目录下启动端口输入 react-native start
+如果显示 Metro Bundler can't listen on port 8081就表示端口被占用
+3.解决方法
+在项目目录下启动端口
+输入：lsof -n -i4TCP:8081
+找到node的PID
+输入：kill -9 PID
+4.重新运行
+react-native run-android
+
