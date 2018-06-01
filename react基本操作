@@ -33,6 +33,9 @@ react-native init 项目名
 3.运行reactnative项目
 react-native start
 
+4.运行Android项目
+react-native run-android
+
 
 
 
