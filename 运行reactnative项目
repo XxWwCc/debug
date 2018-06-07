@@ -14,7 +14,7 @@ targetSdkVersion 27
 compile 'com.android.support:appcompat-v7:23.0.1'
 
 修改
-compile为implementation(androidstudio新版本不支持）
+compile为 implementation (androidstudio新版本不支持）
 
 2.在main下新建文件夹assets。
 3.在终端中运行命令：
